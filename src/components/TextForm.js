@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropType from "prop-types";
-
+import Alert from './Alert';
 
 
 export default function TextForm(props) {
@@ -20,6 +20,7 @@ export default function TextForm(props) {
     };
     const handleClearClick = () => {
         let newtext = '';
+        props.showAlert("Text has been cleared","success");
         setText(newtext);
     };
     const handleOnChange = (event) => {
