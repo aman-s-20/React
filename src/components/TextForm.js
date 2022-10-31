@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import PropType from "prop-types";
-import Alert from './Alert';
-
 
 export default function TextForm(props) {
     const [text, setText] = useState("");
